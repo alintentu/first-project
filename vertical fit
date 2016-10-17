@@ -1,0 +1,27 @@
+		var selectGrup = $(".contact-type");
+
+		$(window).on("change", selectGrup, function() {
+			var selected = selectGrup.find("option:selected").val();
+			if ( selected == "GRUP" ) {
+				$(".show-if-grup").show();
+				$(".show-if-bodyshape").hide();
+				$(".show-if-individual").hide();	
+			} else if ( selected == "INDIVIDUAL" ) {
+				$(".show-if-grup").hide();
+				$(".show-if-bodyshape").hide();
+				$(".show-if-individual").show();
+			} else if ( selected == "BODY SHAPE" ) {
+				$(".show-if-grup").hide();
+				$(".show-if-individual").hide();
+				$(".show-if-bodyshape").show();
+			} else { 
+				$(".show-if-grup").hide();
+				$(".show-if-bodyshape").hide();
+				$(".show-if-individual").hide();
+			}
+		});
+		$(".show-if-grup").hide();
+		$(".show-if-individual").hide();
+		$(".show-if-bodyshape").hide();
+
+	});
