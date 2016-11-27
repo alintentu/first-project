@@ -1,0 +1,5 @@
+color blocks for maffbags in attribure
+
+jQuery('#the-list .column-description').each( function() { 
+	jQuery(this).html('<span style="background-color: ' + jQuery(this).text() + '; width: 42px; height: 32px; display: block;"> </span>'); 
+});
